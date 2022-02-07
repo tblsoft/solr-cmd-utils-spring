@@ -19,6 +19,17 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>io.github.tblsoft.solr</groupId>
+			<artifactId>solr-cmd-utils</artifactId>
+			<version>3.21</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-simple</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
